@@ -11,6 +11,7 @@ import TeamMates from "./components/TeamMates/TeamMates.vue";
 import SevenDayAheadDatasetDetails from "./components/BrowseData/SevenDayAheadDatasetDetails.vue";
 import DailyMinsDatasetDetails from "./components/BrowseData/DailyMinsDatasetDetails.vue";
 import DailyPeakDatasetDetails from "./components/BrowseData/DailyPeakDatasetDetails.vue";
+import DatasetDetails from "./components/BrowseData/DatasetDetails.vue";
 
 //router setup
 const routes = [
@@ -46,7 +47,7 @@ const routes = [
   { 
     path: "/data/:datasetName", 
     name: "DatasetDetails", 
-    component: DailyMinsDatasetDetails, 
+    component: DatasetDetails, 
   }
 ];
 
