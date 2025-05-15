@@ -47,11 +47,11 @@ export default {
             search: '',
             DataSets: [
                 {
-                    Name: "ERCOT - Seven_Day_Load_Forecast_by_Weather_Zone",
+                    Name: "Seven_Day_Load_Forecast_by_Weather_Zone",
                     TableName: "Seven_Day_Load_Forecast_by_Weather_Zone",
                 },
                 {
-                    Name: "ERCOT - Long_Term_Daily_Load_Forecast_Updated",
+                    Name: "Long_Term_Daily_Load_Forecast_Updated",
                     TableName: "Daily_Mins_Data",
                 },
                 {

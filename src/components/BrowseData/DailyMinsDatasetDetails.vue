@@ -4,7 +4,7 @@
         <v-row class="d-flex justify-space-between mt-15 mb-10">
             <v-col cols="5" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class="text-white text-subtitle-1">Dataset Name</p> 
-                <p class="text-white text-h6">{{ routeData.datasetName }}</p>
+                <p class="text-white text-h6">ERCOT - Long_Term_Daily_Load_Forecast_Updated Daily mins</p>
             </v-col>
             <v-col cols="3" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class="text-white text-subtitle-1">Number of Features</p>
@@ -50,10 +50,13 @@ export default {
         return {
             routeData: this.$route.params,
             images: [
-                "buy-time.png",
-                "sell-time.png",
-                "freq-dist-sell.png",
-                "freq-dist-buy.png",
+                "daily_mins_1.png",
+                "daily_mins_2.png",
+                "daily_mins_3.png",
+                "daily_mins_4.png",
+                "daily_mins_5.png",
+                "daily_mins_6.png",
+                "daily_mins_7.png",
             ],
             enlargedImage: null,
             enlargedTable: false, // Added enlargedTable state

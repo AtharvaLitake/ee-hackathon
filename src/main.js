@@ -8,7 +8,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./components/HomePage/HomePage.vue";
 import BrowseData from "./components/BrowseData/BrowseData.vue";
 import TeamMates from "./components/TeamMates/TeamMates.vue";
-import DatasetDetails from "./components/BrowseData/DatasetDetails.vue";
+import SevenDayAheadDatasetDetails from "./components/BrowseData/SevenDayAheadDatasetDetails.vue";
+import DailyMinsDatasetDetails from "./components/BrowseData/DailyMinsDatasetDetails.vue";
 
 //router setup
 const routes = [
@@ -27,9 +28,19 @@ const routes = [
     component: TeamMates
   },
   { 
+    path: "/data/Seven_Day_Load_Forecast_by_Weather_Zone", 
+    name: "SevenDayAheadDatasetDetails", 
+    component: SevenDayAheadDatasetDetails, 
+  },
+  { 
+    path: "/data/Long_Term_Daily_Load_Forecast_Updated", 
+    name: "Daily_Mins_Data", 
+    component: DailyMinsDatasetDetails, 
+  },
+  { 
     path: "/data/:datasetName", 
     name: "DatasetDetails", 
-    component: DatasetDetails, 
+    component: DailyMinsDatasetDetails, 
   }
 ];
 
