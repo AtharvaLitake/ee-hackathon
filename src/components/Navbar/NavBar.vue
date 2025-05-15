@@ -1,15 +1,33 @@
 <template>
-    <v-app-bar app fixed dense height="70" class="navbar" elevation="0" flat>
-        <div class="logo-container">
-            <span class="logo-text text-primary">VizMetaPeek</span>
-        </div>
-        <div>
-            <v-btn text class="text-primary nav-link" to="/">HOME</v-btn>
-            <v-btn text class="text-primary nav-link" to="/data">BROWSE DATA</v-btn>
-            <v-btn text class="text-primary nav-link" to="/team">TEAM MEMBERS</v-btn>
-        </div>
-    </v-app-bar>
+  <v-app-bar app fixed dense height="70" class="navbar" elevation="0" flat>
+    <div class="logo-container">
+      <span class="logo-text text-primary">VizMetaPeek</span>
+    </div>
+    <div>
+      <v-btn
+        text
+        class="custom_font nav-link"
+        :class="{ 'text-primary': $route.path === '/' }"
+        to="/"
+      >HOME</v-btn>
+
+      <v-btn
+        text
+        class="custom_font nav-link"
+        :class="{ 'text-primary': $route.path.startsWith('/data') }"
+        to="/data"
+      >BROWSE DATA</v-btn>
+
+      <v-btn
+        text
+        class="custom_font nav-link"
+        :class="{ 'text-primary': $route.path.startsWith('/team') }"
+        to="/team"
+      >TEAM MEMBERS</v-btn>
+    </div>
+  </v-app-bar>
 </template>
+
 
 <style scoped>
 body,
@@ -46,5 +64,8 @@ body,
     margin: 0 16px;
     transition: all 0.3s ease-in-out;
     margin-left: 100px;
+}
+.custom_font{
+    color: rgb(82, 82, 82);
 }
 </style>

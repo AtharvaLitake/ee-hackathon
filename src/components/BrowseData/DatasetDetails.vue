@@ -33,4 +33,5 @@ export default {
 h1 {
     color: #333;
 }
+
 </style>

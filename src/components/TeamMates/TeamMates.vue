@@ -3,7 +3,7 @@
     <v-container class="mt-15">
         <v-row>
             <v-col cols="12" class="text-center">
-                <h1 class="text-h4 font-weight-bold ">Meet Our Team</h1>
+                <h1 class="text-h4 custom_font ">Meet Our Team</h1>
             </v-col>
         </v-row>
 
@@ -66,5 +66,8 @@ export default {
 <style scoped>
 h1 {
     margin-bottom: 32px;
+}
+.custom_font{
+    color: rgb(82, 82, 82);
 }
 </style>

@@ -2,23 +2,23 @@
     <nav-bar></nav-bar>
     <v-container class="mt-15" v-if="!loading">
         <div class="d-flex justify-space-between align-center mb-5">
-            <h1 class="text-h4 text-primary">
+            <h1 class="custom_font text-h4">
                 Browse the Data
             </h1>
             <v-col cols="12" sm="6" md="4">
-                <v-text-field v-model="search" label="Search" append-inner-icon="mdi-magnify" single-line hide-details
-                    color="primary"></v-text-field>
+                <v-text-field v-model="search" label="Search" append-inner-icon="mdi-magnify" single-line hide-details variant="outlined"
+                    class="custom_font"></v-text-field>
             </v-col>
         </div>
-        <v-row dense>
-            <v-col v-for="data in filteredDataSets" :key="data.TableName" cols="12" sm="6" md="4" lg="3"
+        <v-row class="mb-10">
+            <v-col v-for="data in filteredDataSets" :key="data.TableName" cols="12" sm="6" md="4" xl="3"
             class="d-flex justify-center">
             <v-card class="pa-6 d-flex flex-column align-center" outlined style="width: 100%; height: 100%;">
                 <v-img src="../../Images/folder.jpg" transition width="120" height="120" class="mb-3" />
-                <p class="text-h6 font-weight-bold text-primary text-center mb-2">
+                <p class="text-subtitle-1 font-weight-medium text-primary text-center mb-2">
                 {{ data.Name }}
                 </p>
-                <p class="font-weight-medium text-center mb-3">
+                <p class="custom_font text-subtitle-2 text-center mb-3">
                 {{ data.TableName }}
                 </p>
                 <v-btn 
@@ -49,10 +49,6 @@ export default {
                 {
                     Name: "ERCOT - Seven_Day_Load_Forecast_by_Weather_Zone",
                     TableName: "Seven_Day_Load_Forecast_by_Weather_Zone",
-                },
-                {
-                    Name: "ERCOT - DAM_CURRENT_OPERATING_PLAN_ALL_UPDATES",
-                    TableName: "DAM_CURRENT_OPERATING_PLAN_ALL_UPDATES",
                 },
                 {
                     Name: "ERCOT - Long_Term_Daily_Load_Forecast_Updated",
@@ -116,10 +112,9 @@ export default {
 </script>
 
 <style scoped>
-.custom_loader {
-    height: 90vh;
+.custom_font{
+    color: rgb(82, 82, 82);
 }
-
 .fixed-width {
     width: 150px;
     text-align: center;
