@@ -4,7 +4,7 @@
         <v-row class="d-flex justify-space-between mt-15 mb-10">
             <v-col cols="5" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class="text-white text-subtitle-1">Dataset Name</p> 
-                <p class="text-white text-h6">ERCOT - Seven_Day_Load_Forecast_by_Weather_Zone</p>
+                <p class="text-white text-h6">ERCOT - Long_Term_Daily_Load_Forecast_Updated Daily mins/Daily_Peak_Data</p>
             </v-col>
             <v-col cols="3" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class="text-white text-subtitle-1">Number of Features</p>
@@ -12,7 +12,7 @@
             </v-col>
             <v-col cols="3" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class="text-white text-subtitle-1">Total Records</p>
-                <p class="text-white text-h6">3389</p>
+                <p class="text-white text-h6">15,000</p>
             </v-col>
         </v-row>
         <div class="dashboard meta-tables">
@@ -50,11 +50,9 @@ export default {
         return {
             routeData: this.$route.params,
             images: [
-                "buy-time.png",
-                "sell-time.png",
-                "freq-dist-sell.png",
-                "freq-dist-buy.png",
-                "heatmap.png",
+                "Daily_Peak_Data_1.png",
+                "Daily_Peak_Data_2.png",
+                "Daily_Peak_Data_3.png",
             ],
             enlargedImage: null,
             enlargedTable: false, // Added enlargedTable state

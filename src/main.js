@@ -10,6 +10,7 @@ import BrowseData from "./components/BrowseData/BrowseData.vue";
 import TeamMates from "./components/TeamMates/TeamMates.vue";
 import SevenDayAheadDatasetDetails from "./components/BrowseData/SevenDayAheadDatasetDetails.vue";
 import DailyMinsDatasetDetails from "./components/BrowseData/DailyMinsDatasetDetails.vue";
+import DailyPeakDatasetDetails from "./components/BrowseData/DailyPeakDatasetDetails.vue";
 
 //router setup
 const routes = [
@@ -36,6 +37,11 @@ const routes = [
     path: "/data/Long_Term_Daily_Load_Forecast_Updated", 
     name: "Daily_Mins_Data", 
     component: DailyMinsDatasetDetails, 
+  },
+  { 
+    path: "/data/ERCOT-Long_Term_Daily_Load_Forecast_Updated", 
+    name: "Daily_Peak_Data", 
+    component: DailyPeakDatasetDetails, 
   },
   { 
     path: "/data/:datasetName", 

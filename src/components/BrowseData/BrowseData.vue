@@ -55,7 +55,7 @@ export default {
                     TableName: "Daily_Mins_Data",
                 },
                 {
-                    Name: "ERCOT - Long_Term_Daily_Load_Forecast_Updated",
+                    Name: "ERCOT-Long_Term_Daily_Load_Forecast_Updated",
                     TableName: "Daily_Peak_Data",
                 },
                 {
