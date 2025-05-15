@@ -10,7 +10,7 @@ export default createVuetify({
     themes: {
       light: {
         colors: {
-          primary:'#59A7AA',
+          primary:'##636efa',
         },
         fonts: {
           primary:'Poppins, sans-serif',

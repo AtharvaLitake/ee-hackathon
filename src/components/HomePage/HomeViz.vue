@@ -9,7 +9,7 @@
                 </v-sheet>
             </v-col>
             <v-col cols="12" sm="5">
-                <v-img src="../../Images/Visualization_page.svg" width="80%"></v-img>
+                <v-img src="../../Images/Visualization_page.svg" width="90%"></v-img>
             </v-col>
         </v-row>
 </template>
