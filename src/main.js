@@ -8,12 +8,29 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./components/HomePage/HomePage.vue";
 import BrowseData from "./components/BrowseData/BrowseData.vue";
 import TeamMates from "./components/TeamMates/TeamMates.vue";
+import DatasetDetails from "./components/BrowseData/DatasetDetails.vue";
 
 //router setup
 const routes = [
-  { path: "/", name: "HomePage", component: HomePage },
-  { path: "/data", name: "BrowseData", component: BrowseData },
-  { path: "/team", name: "TeamMates", component: TeamMates},
+  { path: "/",
+    name: "HomePage",
+    component: HomePage
+  },
+  { 
+    path: "/data", 
+    name: "BrowseData", 
+    component: BrowseData,
+  },
+  { 
+    path: "/team",
+    name: "TeamMates",
+    component: TeamMates
+  },
+  { 
+    path: "/data/:datasetName", 
+    name: "DatasetDetails", 
+    component: DatasetDetails, 
+  }
 ];
 
 const router = createRouter({
