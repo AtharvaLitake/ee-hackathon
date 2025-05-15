@@ -19,9 +19,9 @@ export default {
             datasetName: "ERCOT - Seven_Day_Load_Forecast_by_Weather_Zone",
             tableName: "Seven_Day_Load_Forecast_by_Weather_Zone",
             headers: [
-                { text: "Column", value: "column" },
-                { text: "Non-Null Count", value: "nonNullCount" },
-                { text: "Dtype", value: "dtype" },
+                { title: "Column Name", value: "column" },
+                { title: "Non-Null Count", value: "nonNullCount" },
+                { title: "Data Type", value: "dtype" },
             ],
             rows: [
                 { column: "DeliveryDate", nonNullCount: 3389, dtype: "datetime64[ns]" },
