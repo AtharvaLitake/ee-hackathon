@@ -3,7 +3,7 @@
     <v-container>
                 <v-row class="d-flex justify-space-between mt-15 mb-10">
             <v-col cols="5" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                <p class="text-white text-subtitle-1">Dataset Name</p>
+                <p class="text-white text-subtitle-1">Dataset Name</p> 
                 <p class="text-white text-h6">{{ routeData.datasetName }}</p>
             </v-col>
             <v-col cols="3" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
