@@ -19,14 +19,14 @@
                 {{ data.Name }}
                 </p>
                 <p class="custom_font text-subtitle-2 text-center mb-3">
-                {{ data.TableName }}
+                    {{ data.TableName }}
                 </p>
                 <v-btn 
                     class="mb-2" 
                     variant="outlined" 
                     size="large" 
                     color="primary" 
-                    :to="`/data/${data.TableName}`">
+                    :to="`/data/${data.Name}`">
                     Visualize
                 </v-btn>
             </v-card>
