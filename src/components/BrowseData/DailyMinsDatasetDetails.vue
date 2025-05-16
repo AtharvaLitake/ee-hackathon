@@ -70,6 +70,9 @@ export default {
                 "daily_mins_5.png",
                 "daily_mins_6.png",
                 "daily_mins_7.png",
+                "daily_mins_8.png",
+                "daily_mins_9.png",
+                "daily_mins_10.png",
             ],
             enlargedImage: null,
             enlargedTable: false, // Added enlargedTable state
