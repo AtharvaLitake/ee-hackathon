@@ -10,12 +10,12 @@
             <v-col cols="3" class="bg-blue-lighten-5  text-center"
                 style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class=" text-subtitle-1">Number of Features</p>
-                <p class="text-h6">25</p>
+                <p class="text-h6">26</p>
             </v-col>
             <v-col cols="3" class="bg-blue-lighten-5  text-center"
                 style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class=" text-subtitle-1">Total Records</p>
-                <p class="text-h6">3,651</p>
+                <p class="text-h6">3,677</p>
             </v-col>
         </v-row>
         <v-row>
