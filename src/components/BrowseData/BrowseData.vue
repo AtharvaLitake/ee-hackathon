@@ -58,46 +58,6 @@ export default {
                     Name: "ERCOT-Long_Term_Daily_Load_Forecast_Updated",
                     TableName: "Daily_Peak_Data",
                 },
-                {
-                    Name: "ERCOT - Real_Time_Load_Forecast",
-                    TableName: "Real_Time_Load_Forecast",
-                },
-                {
-                    Name: "ERCOT - Monthly_Load_Statistics",
-                    TableName: "Monthly_Load_Statistics",
-                },
-                {
-                    Name: "ERCOT - Annual_Load_Statistics",
-                    TableName: "Annual_Load_Statistics",
-                },
-                {
-                    Name: "ERCOT - Hourly_Load_Data",
-                    TableName: "Hourly_Load_Data",
-                },
-                {
-                    Name: "ERCOT - Renewable_Energy_Production",
-                    TableName: "Renewable_Energy_Production",
-                },
-                {
-                    Name: "North America - Energy_Consumption_Trends",
-                    TableName: "Energy_Consumption_Trends",
-                },
-                {
-                    Name: "North America - Market_Price_Analysis",
-                    TableName: "Market_Price_Analysis",
-                },
-                {
-                    Name: "North America - Grid_Stability_Reports",
-                    TableName: "Grid_Stability_Reports",
-                },
-                {
-                    Name: "North America - Power_Outage_Statistics",
-                    TableName: "Power_Outage_Statistics",
-                },
-                {
-                    Name: "North America - Demand_Response_Programs",
-                    TableName: "Demand_Response_Programs",
-                },
             ],
         };
     },
