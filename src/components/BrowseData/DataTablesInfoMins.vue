@@ -20,7 +20,7 @@ export default {
             tableName: "Seven_Day_Load_Forecast_by_Weather_Zone",
             headers: [
                 { title: "Column Name", value: "column" },
-                { title: "Non-Null Count", value: "nonNullCount" },
+                { title: "Non-Null Count", value: "non_null_count" },
                 { title: "Data Type", value: "dtype" },
             ],
             rows: [
