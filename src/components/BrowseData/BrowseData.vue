@@ -3,7 +3,7 @@
     <v-container class="mt-15" v-if="!loading">
         <div class="d-flex justify-space-between align-center mb-5">
             <h1 class="custom_font text-h4">
-                Browse the Data
+                Browse Data
             </h1>
             <v-col cols="12" sm="6" md="4">
                 <v-text-field v-model="search" label="Search" append-inner-icon="mdi-magnify" single-line hide-details variant="outlined"

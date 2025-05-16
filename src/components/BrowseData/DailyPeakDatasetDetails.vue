@@ -5,7 +5,7 @@
             <v-col cols="5" class="bg-blue-lighten-5 text-center"
                 style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class=" text-subtitle-1">Dataset Name</p>
-                <p class="text-h6"> Daily_Mins</p>
+                <p class="text-h6"> Daily_Peak</p>
             </v-col>
             <v-col cols="3" class="bg-blue-lighten-5  text-center"
                 style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
@@ -56,7 +56,7 @@
 
 <script>
 import NavBar from '../Navbar/NavBar.vue';
-import DataTablesInfo from './DataTablesInfo-Mins.vue';
+import DataTablesInfo from './DataTablesInfo-Peak.vue';
 export default {
     name: "DatasetDetails",
     data() {
