@@ -2,37 +2,50 @@
     <nav-bar></nav-bar>
     <v-container>
         <v-row class="d-flex justify-space-between mt-15 mb-10">
-            <v-col cols="5" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                <p class="text-white text-subtitle-1">Dataset Name</p> 
-                <p class="text-white text-h6">ERCOT - Seven_Day_Load_Forecast_by_Weather_Zone</p>
+            <v-col cols="5" class="bg-primary text-center"
+                style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <p class="text-white text-subtitle-1">Dataset Name</p>
+                <p class="text-white text-h6"> Daily_Mins</p>
             </v-col>
-            <v-col cols="3" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <v-col cols="3" class="bg-primary text-center"
+                style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class="text-white text-subtitle-1">Number of Features</p>
                 <p class="text-white text-h6">9</p>
             </v-col>
-            <v-col cols="3" class="bg-primary text-center" style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <v-col cols="3" class="bg-primary text-center"
+                style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 <p class="text-white text-subtitle-1">Total Records</p>
-                <p class="text-white text-h6">3389</p>
+                <p class="text-white text-h6">15,000</p>
             </v-col>
         </v-row>
-        <div class="dashboard meta-tables">
-            <div class="dashboard-item" @click="enlargedTable = true">
-                <data-tables-info />
-            </div>
-        </div>
-        <div v-if="enlargedTable" class="table-modal" @click.self="enlargedTable = false">
-            <div class="table-modal-content">
-                <data-tables-info />
-                <button class="close-button" @click="enlargedTable = false">Close</button>
-            </div>
-        </div>
-        <div class="dashboard summary-visuals">
-            <div class="dashboard-item" v-for="(image, index) in images" :key="index">
-                <img 
-                    :src="require(`@/Images/Data-1-visuals/${image}`)" 
-                    :alt="`Image ${index + 1}`" 
-                    @click="enlargeImage(require(`@/Images/Data-1-visuals/${image}`))"
-                >
+        <v-row>
+            <v-col cols="6">
+                <div class="meta-tables">
+                    <div @click="enlargedTable = true">
+                        <data-tables-info />
+                    </div>
+                </div>
+                <div v-if="enlargedTable" class="table-modal" @click.self="enlargedTable = false">
+                    <div class="table-modal-content">
+                        <data-tables-info />
+                        <button class="close-button" @click="enlargedTable = false">Close</button>
+                    </div>
+                </div>
+            </v-col>
+            <v-col cols="6">
+                <div class="dashboard-item " v-for="(image, index) in images.slice(0, 2)" :key="index">
+                    <img :src="require(`@/Images/Data-1-visuals/${image}`)" :alt="`Image ${index + 1}`"
+                        @click="enlargeImage(require(`@/Images/Data-1-visuals/${image}`))">
+                </div>
+                <div v-if="enlargedImage" class="image-modal" @click="enlargedImage = null">
+                    <img :src="enlargedImage" alt="Enlarged Image">
+                </div>
+            </v-col>
+        </v-row>
+                <div class="dashboard summary-visuals">
+            <div class="dashboard-item" v-for="(image, index) in images.slice(2, images.length)" :key="index">
+                <img :src="require(`@/Images/Data-1-visuals/${image}`)" :alt="`Image ${index + 1}`"
+                    @click="enlargeImage(require(`@/Images/Data-1-visuals/${image}`))">
             </div>
         </div>
         <div v-if="enlargedImage" class="image-modal" @click="enlargedImage = null">

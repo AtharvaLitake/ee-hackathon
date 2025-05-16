@@ -33,7 +33,7 @@
                 </div>
             </v-col>
             <v-col cols="6">
-                <div class="dashboard-item mt-10" v-for="(image, index) in images.slice(0, 2)" :key="index">
+                <div class="dashboard-item" v-for="(image, index) in images.slice(0, 2)" :key="index">
                     <img :src="require(`@/Images/Data-1-visuals/${image}`)" :alt="`Image ${index + 1}`"
                         @click="enlargeImage(require(`@/Images/Data-1-visuals/${image}`))">
                 </div>
