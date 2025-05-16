@@ -33,21 +33,17 @@
                 </div>
             </v-col>
             <v-col cols="6">
-                <div class=" meta-tables">
-                    <div @click="enlargedTable = true">
-                        <data-tables-info />
-                    </div>
+                <div class="dashboard-item mt-10" v-for="(image, index) in images.slice(0, 2)" :key="index">
+                    <img :src="require(`@/Images/Data-1-visuals/${image}`)" :alt="`Image ${index + 1}`"
+                        @click="enlargeImage(require(`@/Images/Data-1-visuals/${image}`))">
                 </div>
-                <div v-if="enlargedTable" class="table-modal" @click.self="enlargedTable = false">
-                    <div class="table-modal-content">
-                        <data-tables-info />
-                        <button class="close-button" @click="enlargedTable = false">Close</button>
-                    </div>
+                <div v-if="enlargedImage" class="image-modal" @click="enlargedImage = null">
+                    <img :src="enlargedImage" alt="Enlarged Image">
                 </div>
             </v-col>
         </v-row>
-        <div class="dashboard summary-visuals">
-            <div class="dashboard-item" v-for="(image, index) in images" :key="index">
+                <div class="dashboard summary-visuals">
+            <div class="dashboard-item" v-for="(image, index) in images.slice(2, images.length)" :key="index">
                 <img :src="require(`@/Images/Data-1-visuals/${image}`)" :alt="`Image ${index + 1}`"
                     @click="enlargeImage(require(`@/Images/Data-1-visuals/${image}`))">
             </div>
@@ -180,4 +176,13 @@ h1 {
 .close-button:hover {
     background-color: #d32f2f;
 }
+
+.dashboard-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 </style>
