@@ -36,17 +36,17 @@ export default {
             team: [
                 {
                     name: 'Atharva Litake',
-                    role: 'Frontend Developer & Data Analyst',
+                    role: 'Frontend Developer',
                     photo: atharva,
                 },
                 {
                     name: 'Abhishek Saware',
-                    role: 'Product Manager',
+                    role: 'Software Developer',
                     photo: abhishek,
                 },
                 {
                     name: 'Narendra Lungare',
-                    role: 'Analyst & Manager',
+                    role: 'Backend Developer',
                     photo: narendra,
 
                 },
