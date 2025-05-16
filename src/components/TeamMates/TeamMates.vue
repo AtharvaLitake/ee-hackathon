@@ -25,7 +25,7 @@
 import atharva from '../../Images/Atharva Litake.jpg'
 import abhishek from '../../Images/Abhishek.jpg'
 import narendra from '../../Images/Narendra.jpg'
-import sakshi from '../../Images/Sakshi.jpg'
+//import sakshi from '../../Images/Sakshi.jpg'
 import NavBar from '../Navbar/NavBar.vue';
 export default {
     components: {
@@ -50,11 +50,11 @@ export default {
                     photo: narendra,
 
                 },
-                {
-                    name: 'Sakshi Wayal',
-                    role: 'UX & Mentor',
-                    photo: sakshi,
-                }
+                // {
+                //     name: 'Sakshi Wayal',
+                //     role: 'UX & Mentor',
+                //     photo: sakshi,
+                // }
             ],
         }
     }
