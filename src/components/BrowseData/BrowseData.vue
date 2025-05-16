@@ -15,7 +15,7 @@
             class="d-flex justify-center">
             <v-card class="pa-6 d-flex flex-column align-center" outlined style="width: 100%; height: 100%;">
                 <v-img src="../../Images/folder.jpg" transition width="120" height="120" class="mb-3" />
-                <p class="text-subtitle-1 font-weight-medium text-primary text-center mb-2">
+                <p class="text-subtitle-1 font-weight-medium custom_font text-center mb-2">
                 {{ data.Name }}
                 </p>
                 <p class="custom_font text-subtitle-2 text-center mb-3">
