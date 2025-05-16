@@ -22,12 +22,12 @@
             <v-col cols="6">
                 <div class="meta-tables">
                     <div @click="enlargedTable = true">
-                        <data-tables-info />
+                        <data-tables-info-mins />
                     </div>
                 </div>
                 <div v-if="enlargedTable" class="table-modal" @click.self="enlargedTable = false">
                     <div class="table-modal-content">
-                        <data-tables-info />
+                        <data-tables-info-mins />
                         <button class="close-button" @click="enlargedTable = false">Close</button>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
 
 <script>
 import NavBar from '../Navbar/NavBar.vue';
-import DataTablesInfo from './DataTablesInfo-Mins.vue';
+import DataTablesInfoMins from './DataTablesInfoMins.vue';
 export default {
     name: "DatasetDetails",
     data() {
@@ -85,7 +85,7 @@ export default {
     },
     components: {
         "nav-bar": NavBar,
-        "data-tables-info": DataTablesInfo,
+        "data-tables-info-mins": DataTablesInfoMins,
     }
 };
 </script>
